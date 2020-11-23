@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="cperm",
-    version="0.1.2",
+    version="0.1.3",
     author="Maxime Mouchet",
     author_email="max@maxmouchet.com",
     description="Python wrapper for libcperm.",

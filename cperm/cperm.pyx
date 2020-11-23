@@ -49,6 +49,9 @@ class Permutation:
     def __iter__(self):
         return PermutationIterator(self.range, self.mode, self.cipher, self.key)
 
+    def __len__(self):
+        return self.range
+
 
 cdef class PermutationIterator:
     cdef uint32_t _counter
