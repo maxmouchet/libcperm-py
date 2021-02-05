@@ -13,7 +13,12 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/maxmouchet/libcperm-py",
-    ext_modules=cythonize([Extension("cperm", ["cperm/cperm.pyx"])]),
+    ext_modules=cythonize(
+        [
+            Extension("blackrock", ["cperm/blackrock.pyx"]),
+            Extension("cperm", ["cperm/cperm.pyx"]),
+        ]
+    ),
     classifiers=[
         "Programming Language :: Cython",
         "Programming Language :: Python :: 3",

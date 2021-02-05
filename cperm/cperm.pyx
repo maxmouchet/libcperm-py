@@ -1,5 +1,5 @@
-# distutils: sources = libcperm/src/cperm.c libcperm/src/cycle.c libcperm/src/prefix.c libcperm/src/ciphers/rc5-16.c libcperm/src/ciphers/rc5.c libcperm/src/ciphers/speck.c
-# distutils: include_dirs = libcperm/src/
+# distutils: sources = vendors/libcperm/src/cperm.c vendors/libcperm/src/cycle.c vendors/libcperm/src/prefix.c vendors/libcperm/src/ciphers/rc5-16.c vendors/libcperm/src/ciphers/rc5.c vendors/libcperm/src/ciphers/speck.c
+# distutils: include_dirs = vendors/libcperm/src/
 from libc.stdint cimport uint8_t, uint32_t
 
 
